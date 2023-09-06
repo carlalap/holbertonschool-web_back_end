@@ -1,4 +1,4 @@
-export defaul function getSanFranciscoDescription() {
+export default function getSanFranciscoDescription() {
   const year = 2017;
   const budget = {
     income: '$119,868',
