@@ -451,18 +451,7 @@ bob@dylan:~$
   <div class="panel-body">
    <span id="user_id" data-id="6138"></span>
 
-   <!-- Progress vs Score -->
-   <div class="task_progress_score_bar" data-task-id="21461" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-   </div>
-   </div>
-
-   <!-- Task Body -->
+ <!-- Task Body -->
    <p>Rewrite the return statement to use a template literal so you can the substitute the variables you&rsquo;ve defined.</p>
 
 <pre><code>export default function getSanFranciscoDescription() {
@@ -501,19 +490,8 @@ bob@dylan:~$
 
   </div>
 
-  <div class="panel-body">
+<div class="panel-body">
    <span id="user_id" data-id="6138"></span>
-
-   <!-- Progress vs Score -->
-   <div class="task_progress_score_bar" data-task-id="21462" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-   </div>
-   </div>
 
    <!-- Task Body -->
    <p>Notice how the keys and the variable names are the same?</p>
@@ -553,19 +531,6 @@ bob@dylan:~$
 
    <div>
 
-  <div class="panel-body">
-   <span id="user_id" data-id="6138"></span>
-
-   <!-- Progress vs Score -->
-   <div class="task_progress_score_bar" data-task-id="21465" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-   </div>
-   </div>
 
    <!-- Task Body -->
    <p>Rewrite the <code>getBudgetForCurrentYear</code> function to use ES6 computed property names on the <code>budget</code> object</p>
@@ -608,21 +573,6 @@ bob@dylan:~$
 
  </div>
 
-  <div class="panel-body">
-  <span id="user_id" data-id="6138"></span>
-
-  <!-- Progress vs Score -->
-  <div class="task_progress_score_bar" data-task-id="21466" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-   </div>
-   </div>
-
-  <!-- Task Body -->
   <p>Rewrite <code>getFullBudgetObject</code> to use ES6 method properties in the <code>fullBudget</code> object</p>
 
 <pre><code>import getBudgetObject from &#39;./7-getBudgetObject.js&#39;;
@@ -668,21 +618,6 @@ bob@dylan:~$
     </h3>
   </div>
 
-  <div class="panel-body">
-   <span id="user_id" data-id="6138"></span>
-
-   <!-- Progress vs Score -->
-   <div class="task_progress_score_bar" data-task-id="21463" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-   </div>
-   </div>
-
-   <!-- Task Body -->
    <p>Rewrite the function <code>appendToEachArrayValue</code> to use ES6&rsquo;s <code>for...of</code> operator. And don&rsquo;t forget that <code>var</code> is not ES6-friendly.</p>
 
 <pre><code>export default function appendToEachArrayValue(array, appendString) {
@@ -716,20 +651,6 @@ bob@dylan:~$
     </h3>
 
   </div>
-
-  <div class="panel-body">
-   <span id="user_id" data-id="6138"></span>
-
-   <!-- Progress vs Score -->
-   <div class="task_progress_score_bar" data-task-id="21464" data-correction-id="544975">
-   <div class="task_progress_bar">
-   <div class="task_score_bar">
-   </div>
-   </div>
-   <div class="task_progress_score_text">
-   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
-  </div>
-   </div>
 
    <!-- Task Body -->
   <p>Write a function named <code>createEmployeesObject</code> that will receive two arguments:</p>
