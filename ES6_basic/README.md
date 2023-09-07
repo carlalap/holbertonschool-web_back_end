@@ -180,13 +180,13 @@ module.exports = {
 <h2 class="gap">Tasks</h2>
 
 <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      0. Const or let?
-    </h3>
+   <h3 class="panel-title">
+     0. Const or let?
+   </h3>
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
    <!-- Progress vs Score -->
 
@@ -231,14 +231,14 @@ bob@dylan:~$
   </div>
 
  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      1. Block Scope
-    </h3>
+   <h3 class="panel-title">
+     1. Block Scope
+   </h3>
 
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
 <!-- Progress vs Score -->
 
@@ -275,19 +275,19 @@ bob@dylan:~$
   </div>
 
 <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      2. Arrow functions
-    </h3>
+   <h3 class="panel-title">
+     2. Arrow functions
+   </h3>
 
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
-    <!-- Progress vs Score -->
+   <!-- Progress vs Score -->
 
-    <!-- Task Body -->
-    <p>Rewrite the following standard function to use ES6&rsquo;s arrow syntax of the function <code>add</code> (it will be an anonymous function after)</p>
+   <!-- Task Body -->
+   <p>Rewrite the following standard function to use ES6&rsquo;s arrow syntax of the function <code>add</code> (it will be an anonymous function after)</p>
 
 <pre><code>export default function getNeighborhoodsList() {
   this.sanFranciscoNeighborhoods = [&#39;SOMA&#39;, &#39;Union Square&#39;];
@@ -317,14 +317,14 @@ bob@dylan:~$
   </div>
 
  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      3. Parameter defaults
+   <h3 class="panel-title">
+     3. Parameter defaults
     </h3>
 
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
    <!-- Progress vs Score -->
 
@@ -364,13 +364,13 @@ bob@dylan:~$
   </div>
 
 <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
+   <h3 class="panel-title">
       4. Rest parameter syntax for functions
     </h3>
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
 <!-- Progress vs Score -->
 
@@ -406,13 +406,13 @@ bob@dylan:~$
   </div>
 
 <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      5. The wonders of spread syntax
-    </h3>
+   <h3 class="panel-title">
+     5. The wonders of spread syntax
+   </h3>
   </div>
 
   <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
+   <span id="user_id" data-id="6138"></span>
 
    <!-- Progress vs Score -->
 
@@ -437,6 +437,386 @@ bob@dylan:~$ npm run dev 5-main.js
   &#39;d&#39;, &#39;H&#39;, &#39;e&#39;,
   &#39;l&#39;, &#39;l&#39;, &#39;o&#39;
 ]
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+     6. Take advantage of template literals
+   </h3>
+ </div>
+
+  <div class="panel-body">
+   <span id="user_id" data-id="6138"></span>
+
+   <!-- Progress vs Score -->
+   <div class="task_progress_score_bar" data-task-id="21461" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+   </div>
+   </div>
+
+   <!-- Task Body -->
+   <p>Rewrite the return statement to use a template literal so you can the substitute the variables you&rsquo;ve defined.</p>
+
+<pre><code>export default function getSanFranciscoDescription() {
+  const year = 2017;
+  const budget = {
+    income: &#39;$119,868&#39;,
+    gdp: &#39;$154.2 billion&#39;,
+    capita: &#39;$178,479&#39;,
+  };
+
+  return &#39;As of &#39; + year + &#39;, it was the seventh-highest income county in the United States&#39;
+        / &#39;, with a per capita personal income of &#39; + budget.income + &#39;. As of 2015, San Francisco&#39;
+        / &#39; proper had a GDP of &#39; + budget.gdp + &#39;, and a GDP per capita of &#39; + budget.capita + &#39;.&#39;;
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 6-main.js
+import getSanFranciscoDescription from &#39;./6-string-interpolation.js&#39;;
+
+console.log(getSanFranciscoDescription());
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 6-main.js 
+As of 2017, it was the seventh-highest income county in the United States, with a per capita personal income of $119,868. As of 2015, San Francisco proper had a GDP of $154.2 billion, and a GDP per capita of $178,479.
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      7. Object property value shorthand syntax
+    </h3>
+
+  </div>
+
+  <div class="panel-body">
+   <span id="user_id" data-id="6138"></span>
+
+   <!-- Progress vs Score -->
+   <div class="task_progress_score_bar" data-task-id="21462" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+   </div>
+   </div>
+
+   <!-- Task Body -->
+   <p>Notice how the keys and the variable names are the same?</p>
+
+<p>Modify the following function&rsquo;s <code>budget</code> object to simply use the keyname instead.</p>
+
+<pre><code>export default function getBudgetObject(income, gdp, capita) {
+  const budget = {
+    income: income,
+    gdp: gdp,
+    capita: capita,
+  };
+
+  return budget;
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 7-main.js
+import getBudgetObject from &#39;./7-getBudgetObject.js&#39;;
+
+console.log(getBudgetObject(400, 700, 900));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 7-main.js 
+{ income: 400, gdp: 700, capita: 900 }
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      8. No need to create empty objects before adding in properties
+    </h3>
+
+   <div>
+
+  <div class="panel-body">
+   <span id="user_id" data-id="6138"></span>
+
+   <!-- Progress vs Score -->
+   <div class="task_progress_score_bar" data-task-id="21465" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+   </div>
+   </div>
+
+   <!-- Task Body -->
+   <p>Rewrite the <code>getBudgetForCurrentYear</code> function to use ES6 computed property names on the <code>budget</code> object</p>
+
+<pre><code>function getCurrentYear() {
+  const date = new Date();
+  return date.getFullYear();
+}
+
+export default function getBudgetForCurrentYear(income, gdp, capita) {
+  const budget = {};
+
+  budget[`income-${getCurrentYear()}`] = income;
+  budget[`gdp-${getCurrentYear()}`] = gdp;
+  budget[`capita-${getCurrentYear()}`] = capita;
+
+  return budget;
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 8-main.js
+import getBudgetForCurrentYear from &#39;./8-getBudgetCurrentYear.js&#39;;
+
+console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 8-main.js 
+{ &#39;income-2021&#39;: 2100, &#39;gdp-2021&#39;: 5200, &#39;capita-2021&#39;: 1090 }
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      9. ES6 method properties
+    </h3>
+
+ </div>
+
+  <div class="panel-body">
+  <span id="user_id" data-id="6138"></span>
+
+  <!-- Progress vs Score -->
+  <div class="task_progress_score_bar" data-task-id="21466" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+   </div>
+   </div>
+
+  <!-- Task Body -->
+  <p>Rewrite <code>getFullBudgetObject</code> to use ES6 method properties in the <code>fullBudget</code> object</p>
+
+<pre><code>import getBudgetObject from &#39;./7-getBudgetObject.js&#39;;
+
+export default function getFullBudgetObject(income, gdp, capita) {
+  const budget = getBudgetObject(income, gdp, capita);
+  const fullBudget = {
+    ...budget,
+    getIncomeInDollars: function (income) {
+      return `$${income}`;
+    },
+    getIncomeInEuros: function (income) {
+      return `${income} euros`;
+    },
+  };
+
+  return fullBudget;
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 9-main.js
+import getFullBudgetObject from &#39;./9-getFullBudget.js&#39;;
+
+const fullBudget = getFullBudgetObject(20, 50, 10);
+
+console.log(fullBudget.getIncomeInDollars(fullBudget.income));
+console.log(fullBudget.getIncomeInEuros(fullBudget.income));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 9-main.js 
+$20
+20 euros
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      10. For...of Loops
+    </h3>
+  </div>
+
+  <div class="panel-body">
+   <span id="user_id" data-id="6138"></span>
+
+   <!-- Progress vs Score -->
+   <div class="task_progress_score_bar" data-task-id="21463" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+   </div>
+   </div>
+
+   <!-- Task Body -->
+   <p>Rewrite the function <code>appendToEachArrayValue</code> to use ES6&rsquo;s <code>for...of</code> operator. And don&rsquo;t forget that <code>var</code> is not ES6-friendly.</p>
+
+<pre><code>export default function appendToEachArrayValue(array, appendString) {
+  for (var idx in array) {
+    var value = array[idx];
+    array[idx] = appendString + value;
+  }
+
+  return array;
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 10-main.js
+import appendToEachArrayValue from &#39;./10-loops.js&#39;;
+
+console.log(appendToEachArrayValue([&#39;appended&#39;, &#39;fixed&#39;, &#39;displayed&#39;], &#39;correctly-&#39;));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 10-main.js 
+[ &#39;correctly-appended&#39;, &#39;correctly-fixed&#39;, &#39;correctly-displayed&#39; ]
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      11. Iterator
+    </h3>
+
+  </div>
+
+  <div class="panel-body">
+   <span id="user_id" data-id="6138"></span>
+
+   <!-- Progress vs Score -->
+   <div class="task_progress_score_bar" data-task-id="21464" data-correction-id="544975">
+   <div class="task_progress_bar">
+   <div class="task_score_bar">
+   </div>
+   </div>
+   <div class="task_progress_score_text">
+   Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">Checks completed: 0%</span>)
+  </div>
+   </div>
+
+   <!-- Task Body -->
+  <p>Write a function named <code>createEmployeesObject</code> that will receive two arguments:</p>
+
+<ul>
+<li><code>departmentName</code> (String)</li>
+<li><code>employees</code> (Array of Strings)</li>
+</ul>
+
+<pre><code>export default function createEmployeesObject(departmentName, employees) {
+
+}
+</code></pre>
+
+<p>The function should return an object with the following format:</p>
+
+<pre><code>{
+     $departmentName: [
+          $employees,
+     ],
+}
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 11-main.js
+import createEmployeesObject from &#39;./11-createEmployeesObject.js&#39;;
+
+console.log(createEmployeesObject(&quot;Software&quot;, [ &quot;Bob&quot;, &quot;Sylvie&quot; ]));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 11-main.js 
+{ Software: [ &#39;Bob&#39;, &#39;Sylvie&#39; ] }
+bob@dylan:~$
+</code></pre>
+
+  </div>
+
+<div class="panel-heading panel-heading-actions">
+   <h3 class="panel-title">
+      12. Let&#39;s create a report object
+    </h3>
+  </div>
+
+  <!-- Task Body -->
+   <p>Write a function named <code>createReportObject</code> whose parameter, <code>employeesList</code>, is the return value of the previous function <code>createEmployeesObject</code>.</p>
+
+<pre><code>export default function createReportObject(employeesList) {
+
+}
+</code></pre>
+
+<p><code>createReportObject</code> should return an object containing the key <code>allEmployees</code> and a method property called <code>getNumberOfDepartments</code>. </p>
+
+<p><code>allEmployees</code> is a key that maps to an object containing the department name and a list of all the employees in that department. If you&rsquo;re having trouble, use the spread syntax.</p>
+
+<p>The method property receives <code>employeesList</code> and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.</p>
+
+<pre><code>{
+  allEmployees: {
+     engineering: [
+          &#39;John Doe&#39;,
+          &#39;Guillaume Salva&#39;,
+     ],
+  },
+};
+</code></pre>
+
+<p>Execution:</p>
+
+<pre><code>bob@dylan:~$ cat 12-main.js
+import createEmployeesObject from &#39;./11-createEmployeesObject.js&#39;;
+import createReportObject from &#39;./12-createReportObject.js&#39;;
+
+const employees = {
+    ...createEmployeesObject(&#39;engineering&#39;, [&#39;Bob&#39;, &#39;Jane&#39;]),
+    ...createEmployeesObject(&#39;marketing&#39;, [&#39;Sylvie&#39;])
+};      
+
+const report = createReportObject(employees);
+console.log(report.allEmployees);
+console.log(report.getNumberOfDepartments(report.allEmployees));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 12-main.js 
+{ engineering: [ &#39;Bob&#39;, &#39;Jane&#39; ], marketing: [ &#39;Sylvie&#39; ] }
+2
 bob@dylan:~$
 </code></pre>
 
