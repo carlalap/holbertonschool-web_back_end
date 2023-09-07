@@ -6,8 +6,8 @@
 <p><strong>Read or watch</strong>:</p>
 
 <ul>
-<li><a href="/rltoken/AJdJxuoO8o3hwpybQaFSDQ" title="Classes" target="_blank">Classes</a></li>
-<li><a href="/rltoken/jF42Fw5HNIPnFWKmDzVg1g" title="Metaprogramming" target="_blank">Metaprogramming</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" title="Classes" target="_blank">Classes</a></li>
+<li><a href="https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/#symbolspecies" title="Metaprogramming" target="_blank">Metaprogramming</a></li>
 </ul>
 
 <h2>Learning Objectives</h2>
@@ -20,19 +20,6 @@
 <li>Why and how to add a static method to a class</li>
 <li>How to extend a class from another</li>
 <li>Metaprogramming and symbols</li>
-</ul>
-
-<h2>Requirements</h2>
-
-<ul>
-<li>All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x</li>
-<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>Visual Studio Code</code></li>
-<li>All your files should end with a new line</li>
-<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
-<li>Your code should use the <code>js</code> extension</li>
-<li>Your code will be tested using <code>Jest</code> and the command <code>npm run test</code></li>
-<li>Your code will be verified against lint using ESLint</li>
-<li>Your code needs to pass all the tests and lint. You can verify the entire project running <code>npm run full-test</code></li>
 </ul>
 
 <h2>Setup</h2>
