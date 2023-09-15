@@ -7,14 +7,14 @@ and log body firstName lastName to the console.
 In the event of an error, log Signup system offline to the console
 */
 
-import { createUser, uploadPhoto } from './utils';
+import { uploadPhoto, createUser } from './utils';
 
-function handleProfileSignup() {
-  return Promise.all([uploadPhoto(), createUser()])
-    .then((data) => {
-      console.log(`${data[0].body} ${data[1].firstName} ${data[2].lastName}`);
-    })
-    .catch(() => console.log('Signup system offline'));
+export default async function handleProfileSignup() {
+  try {
+    const userupload = await createUser();
+    const photo = await uploadPhoto();
+    console.log(`${photo.body} ${userupload.firstName} ${userupload.lastName}`);
+  } catch (err) {
+    console.log('Signup system offline');
+  }
 }
-
-export default handleProfileSignup;
