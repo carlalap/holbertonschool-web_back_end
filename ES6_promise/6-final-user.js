@@ -17,7 +17,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
   try {
     photo = await uploadPhoto(fileName);
   } catch (error) {
-    error.toString();
+    photo = error.toString();
   }
   return [
     { value: sign, status: 'fulfilled' },
